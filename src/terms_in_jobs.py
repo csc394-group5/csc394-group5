@@ -36,7 +36,9 @@ for file in filelist:
         for term in termlist: 
             if term in line:
                 totalcount += line.count(term)
-                resultlist.append(term)
+                appendcount = line.count(term)
+                for n in range (0, appendcount - 1):
+                    resultlist.append(term)
 
     # aggregate the results
     for term in termlist:
@@ -54,5 +56,5 @@ for file in filelist:
     termfile.close()
 
     # print debug check
-    print "total count: ", totalcount
-    print "sum of counts: ", countcheck
+    # print "total count: ", totalcount
+    # print "sum of counts: ", countcheck
