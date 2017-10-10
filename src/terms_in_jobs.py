@@ -12,8 +12,12 @@ print filelist #debug
 for file in filelist:
     searchfile = open(file)
     termfile = open("/Users/glennhintze/data/keywords.txt", "r")
-    outfile = open("/Users/glennhintze/data/output.txt", "w")
+    outfile = open("/Users/glennhintze/data/output.txt", "a")
 
+    # write the file name to the output
+    print (file)
+    outfile.write("%s\n" % (file))
+    
     # variables
     termlist = []
     resultlist = []
@@ -27,11 +31,11 @@ for file in filelist:
         term = str(line).replace("\r\n","")
         termlist.append(term)
 
-    # search for each term in each line and append to results if found
+    # search for each term in each line of the file and append to results if found
     for line in searchfile:
         for term in termlist: 
-            if term in line: 
-                totalcount += 1
+            if term in line:
+                totalcount += line.count(term)
                 resultlist.append(term)
 
     # aggregate the results
