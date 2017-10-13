@@ -28,16 +28,17 @@ for file in filelist:
 
     # build the list of terms to search for
     for line in termfile:
-        term = str(line).replace("\r\n","")
+        term = str(line).replace("\n","")
         termlist.append(term)
-
+    
+    # print termlist
     # search for each term in each line of the file and append to results if found
     for line in searchfile:
         for term in termlist: 
             if term in line:
                 totalcount += line.count(term)
                 appendcount = line.count(term)
-                for n in range (0, appendcount - 1):
+                for n in range (0, appendcount -1):
                     resultlist.append(term)
 
     # aggregate the results
@@ -47,7 +48,7 @@ for file in filelist:
             if term == result:
                 termcount += 1
         countcheck += termcount #debug
-        print term, ":", termcount
+        # print term, ":", termcount
         outfile.write("%s : %d\n" % (term, termcount))
 
 
