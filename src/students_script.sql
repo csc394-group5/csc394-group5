@@ -23,3 +23,4 @@ CREATE TABLE Students (
     SoftSkill5 varchar(255),
     SoftSkill5Weight int (1),
 );
+
