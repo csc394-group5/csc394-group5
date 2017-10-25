@@ -35,4 +35,4 @@ for (x = 0; x < studentSoftArray.length; x += 2) {
     }
 }
 
-document.write("Job match score for " + studentName + " for job title " + jobName + " is " + jobScore + ".");
+console.log("Job match score for " + studentName + " for job title " + jobName + " is " + jobScore + ".");
