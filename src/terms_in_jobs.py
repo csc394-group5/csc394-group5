@@ -1,18 +1,18 @@
 import os
 
 filelist = []
-rootdir = '/Users/glennhintze/data/jobs'
+rootdir = '/Users/glennhintze/data/jobs/'
 for subdir, dirs, files in os.walk(rootdir):
     for file in files:
         print os.path.join(subdir, file)
         filelist.append(os.path.join(subdir, file))
         
-print filelist #debug
+#print filelist #debug
 
 for file in filelist:
     searchfile = open(file)
-    termfile = open("/Users/glennhintze/data/keywords.txt", "r")
-    outfile = open("/Users/glennhintze/data/output.txt", "a")
+    termfile = open("/Users/glennhintze/data/keywords2.txt", "r")
+    outfile = open("/Users/glennhintze/data/output2.txt", "a")
 
     # write the file name to the output
     print (file)
@@ -28,7 +28,7 @@ for file in filelist:
 
     # build the list of terms to search for
     for line in termfile:
-        term = str(line).replace("\n","")
+        term = str(line).replace("\r\n","")
         termlist.append(term)
     
     # print termlist
