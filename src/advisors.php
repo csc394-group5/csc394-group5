@@ -20,7 +20,6 @@ if ($conn->connect_error) {
 
 // Query db
 $sql = mysqli_query($connection, "SELECT UserID, FirstName, LastName from Users");
-$result = mysql_query ($query);
 echo "<select name='dropdown' value=''><option>Dropdown</option>";
 while ($row = $sql->fetch_assoc()){
     $stringRes = $row['LastName'] . ', ' . $row['FirstName'] . ' - ' . $row['UserID']
