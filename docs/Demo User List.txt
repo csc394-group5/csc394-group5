@@ -3,3 +3,4 @@ Demo Users
 User        Password
 ---------------------
 Advisor     Advisor1!
+demo        demo
