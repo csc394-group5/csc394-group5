@@ -44,23 +44,32 @@ Below are the locations of the following required documents:
 * Requirements (functional and Non-functional):
 [\Documentation\REQ-229377-031017-1714.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/REQ-229377-031017-1714.pdf)
 
--System Technical Specs:
+* System Technical Specs:
 [\Documentation\Concept Demo.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/Concept%20Demo.pdf)
 
--Design/Architecture:
+* Design/Architecture:
 [\Documentation\(JOBFOX) System Architecture.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/%5BJOBFOX%5D%20System%20Architecture.pdf)
 
--DB design, data tables, data dictionary, ER diagram:
+* DB design, data tables, data dictionary, ER diagram:
+
 [\Database\nichol29_application.sql](https://github.com/csc394-group5/csc394-group5/blob/master/Database/nichol29_application.sql)
+
 [\Database\nichol29_db.sql](https://github.com/csc394-group5/csc394-group5/blob/master/Database/nichol29_db.sql)
+
 [\Documentation\(JOBFOX) System Architecture.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/%5BJOBFOX%5D%20System%20Architecture.pdf)
 
--User manual –  short, intuitive, describe features/functions for all users:
-[JobFox]()
-[Neural Network]()
-[Web Front End]()
-[Python Server]()
-[Database]()
+* User <anuals –  short, intuitive, describe features/functions for all users:
 
--Additional Documentation
-[Outstanding Issues Log]
+[JobFox](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/JobFox%20User%20Guide.pdf)
+
+[Neural Network](https://github.com/csc394-group5/csc394-group5/blob/master/NN_Server/readme.txt)
+
+[Web Front End](https://github.com/csc394-group5/csc394-group5/blob/master/public_html/readme.txt)
+
+[Python Server](https://github.com/csc394-group5/csc394-group5/blob/master/Python_Server/readme.txt)
+
+[Database](https://github.com/csc394-group5/csc394-group5/blob/master/Database/readme.txt)
+
+* Additional Documentation
+
+[Outstanding Issues Log] ()
