@@ -9,8 +9,11 @@ Request Example:
 i.e.    
 '''
 localhost:8081/?user=541&type=job
+
 localhost:8081/?user=541&type=degree
+
 user= specifies user ID
+
 type= specifies type of classification being performed.. i.e Job or Degree
 '''
 
