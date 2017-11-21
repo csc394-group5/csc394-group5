@@ -13,7 +13,7 @@ This server is used to fetch job listings from [monster.com](https://www.monster
 to degree information and coursework at DePaul's website.
 
 
-The url for the site is rmacwan.pythonanywhere.com.
+The url for the site is [rmacwan.pythonanywhere.com](rmacwan.pythonanywhere.com).
 
 
 Job requests are in the form /api/jobs/<jobname>. Variable jobname has hyphens or underscores between words. Request returns a json which includes the job description and 5 job postings. The site can be modified to return as many
