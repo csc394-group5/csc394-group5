@@ -26,6 +26,11 @@ The documentation found here includes:
 
 * [User Stories Trello Board](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/User%20Stories%20Trello%20Board.pdf) - Our original User Stories, as an export from Trello, the tool we used to track our User Stories.
 
+
+* [Web Hosting](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/Web%20Hosting.docx) - Documentation specific to how our site is hosted on the web.
+
+
 * [commits_log](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/commits_log.txt) - An export of our GitHub commits.
 
 * [trello.json](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/trello.json) - A copy of our User Stories in JSON format (same information as [User Stories Trello Board](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/User%20Stories%20Trello%20Board.pdf))
+
