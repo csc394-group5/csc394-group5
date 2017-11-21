@@ -6,7 +6,7 @@
 <script src="chart/utils.js"></script>
 <script>
  function query() {
- 
+
  var UserID = document.getElementById("input").value;
  var Job1 = "";
  var Job2 = "";
@@ -21,7 +21,7 @@
  var JobResult5 = 0;
  
     jQuery.ajax({
-        url: "/app/api.php?r="+UserID,
+        url: "/app/api.php?r=" + UserID,
         type: "GET",
         async: false,
         success: function (data) {
@@ -63,17 +63,17 @@
 
 
 
-var chartColors = window.chartColors;
-    var color = Chart.helpers.color;
-    var config = {
+	var chartColors = window.chartColors;
+    	var color = Chart.helpers.color;
+    	var config = {
         data: {
             datasets: [{
                 data: [
-                    JobResult1,
-                    JobResult2,
-                    JobResult3,
-                    JobResult4,
-                    JobResult5,
+                    100*JobResult1,
+                    100*JobResult2,
+                    100*JobResult3,
+                    100*JobResult4,
+                    100*JobResult5,
                 ],
                 backgroundColor: [
                     color(chartColors.red).alpha(0.5).rgbString(),
@@ -99,7 +99,7 @@ var chartColors = window.chartColors;
             },
             title: {
                 display: true,
-                text: 'Custom Career Match'
+                text: ' '
             },
             scale: {
               ticks: {
@@ -120,12 +120,62 @@ var chartColors = window.chartColors;
 
 
     var colorNames = Object.keys(window.chartColors);
+    
 
 </script>
 </head>
 <body>
-<input type="text" id="input" placeholder="Enter UserID..." value="">
-<button onclick="query()">Search</button>
+<h1><center>Student Career Viewer</center></h3>
+<?php
+
+/*
+$servername = "localhost";
+$username = "nichol29_user";
+$password = "Capstone5$";
+$dbname = "nichol29_application";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+*/
+$host_name = "localhost";
+$database = "nichol29_application"; // Change your database name
+$username = "nichol29_user";          // Your database user id 
+$password = "Capstone5$";          // Your password
+
+//////// Do not Edit below /////////
+try {
+$dbo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
+} catch (PDOException $e) {
+print "Error!: " . $e->getMessage() . "<br/>";
+die();
+}
+
+//$sql="SELECT name,id FROM student"; 
+
+$sql="SELECT FirstName,LastName, UserID FROM Users order by LastName"; 
+
+/* You can add order by clause to the sql statement if the names are to be displayed in alphabetical order */
+
+echo "<select id=input name=student value=UserID>Student Name</option>"; // list box select command
+
+foreach ($dbo->query($sql) as $row){//Array or records stored in $row
+
+echo "<option value=$row[UserID]>$row[LastName], $row[FirstName]</option>"; 
+
+/* Option values are added by looping through the array */ 
+
+}
+
+ echo "</select>";// Closing of list box
+?>
+
+<button onclick="query()">Submit</button>
+<button onClick= location.reload()>Clear</button>
 <div id= "test"></div>
     <div id="canvas-holder" style="width:100%">
     <canvas id="chart-area"></canvas>

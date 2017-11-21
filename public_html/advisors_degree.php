@@ -6,19 +6,19 @@
 <script src="chart/utils.js"></script>
 <script>
  function query() {
- 
- var UserID = document.getElementById("input").value;
- var Job1 = "";
- var Job2 = "";
- var Job3 = "";
- var Job4 = "";
- var Job5 = "";
 
- var JobResult1 = 0;
- var JobResult2 = 0;
- var JobResult3 = 0;
- var JobResult4 = 0;
- var JobResult5 = 0;
+ var UserID = document.getElementById("input").value;
+ var Degree1 = "";
+ var Degree2 = "";
+ var Degree3 = "";
+ var Degree4 = "";
+ var Degree5 = "";
+
+ var DegreeResult1 = 0;
+ var DegreeResult2 = 0;
+ var DegreeResult3 = 0;
+ var DegreeResult4 = 0;
+ var DegreeResult5 = 0;
  
     jQuery.ajax({
         url: "/app/api.php?r=" + UserID,
@@ -30,17 +30,17 @@
 			arr.push(data[x]);
 			}
         			
-		Job1 = arr[0].Job1;
-		Job2 = arr[0].Job2;
-		Job3 = arr[0].Job3;
-		Job4 = arr[0].Job4;
-		Job5 = arr[0].Job5;
+		Degree1 = arr[0].Degree1;
+		Degree2 = arr[0].Degree2;
+		Degree3 = arr[0].Degree3;
+		Degree4 = arr[0].Degree4;
+		Degree5 = arr[0].Degree5;
 		
-		JobResult1 = arr[0].JobResult1;
-		JobResult2 = arr[0].JobResult2;
-		JobResult3 = arr[0].JobResult3;
-		JobResult4 = arr[0].JobResult4;
-		JobResult5 = arr[0].JobResult5;
+		DegreeResult1 = arr[0].DegreeResult1;
+		DegreeResult2 = arr[0].DegreeResult2;
+		DegreeResult3 = arr[0].DegreeResult3;
+		DegreeResult4 = arr[0].DegreeResult4;
+		DegreeResult5 = arr[0].DegreeResult5;
 	
 	/*
 		$("div").append(Job1);
@@ -63,17 +63,17 @@
 
 
 
-var chartColors = window.chartColors;
-    var color = Chart.helpers.color;
-    var config = {
+	var chartColors = window.chartColors;
+    	var color = Chart.helpers.color;
+    	var config = {
         data: {
             datasets: [{
                 data: [
-                    JobResult1,
-                    JobResult2,
-                    JobResult3,
-                    JobResult4,
-                    JobResult5,
+                    100*DegreeResult1,
+                    100*DegreeResult2,
+                    100*DegreeResult3,
+                    100*DegreeResult4,
+                    100*DegreeResult5,
                 ],
                 backgroundColor: [
                     color(chartColors.red).alpha(0.5).rgbString(),
@@ -85,11 +85,11 @@ var chartColors = window.chartColors;
                 label: 'My dataset' // for legend
             }],
             labels: [
-                Job1,
-                Job2,
-                Job3,
-                Job4,
-                Job5
+                Degree1,
+                Degree2,
+                Degree3,
+                Degree4,
+                Degree5
             ]
         },
         options: {
@@ -99,7 +99,7 @@ var chartColors = window.chartColors;
             },
             title: {
                 display: true,
-                text: 'Custom Career Match'
+                text: ' '
             },
             scale: {
               ticks: {
@@ -120,10 +120,12 @@ var chartColors = window.chartColors;
 
 
     var colorNames = Object.keys(window.chartColors);
+    
 
 </script>
 </head>
 <body>
+<h1><center>Student Degree Viewer</center></h3>
 <?php
 
 /*
@@ -171,8 +173,8 @@ echo "<option value=$row[UserID]>$row[LastName], $row[FirstName]</option>";
 
  echo "</select>";// Closing of list box
 ?>
-
 <button onclick="query()">Submit</button>
+<button onClick= location.reload()>Clear</button>
 <div id= "test"></div>
     <div id="canvas-holder" style="width:100%">
     <canvas id="chart-area"></canvas>

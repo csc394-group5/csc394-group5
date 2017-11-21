@@ -71,6 +71,8 @@ ON DUPLICATE KEY UPDATE UserID='$UserID', FirstName = '$FirstName', LastName= '$
 	
 	if ($conn->query($sql) === TRUE) {
     echo "New record created successfully<br>";
+	//make request to neural net
+
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -109,4 +111,36 @@ echo"Soft Skill 5:".$SoftSkill5." <br>";
 echo"Soft Skill 5 Weight:".$SoftSkill5Weight." <br><br>";
 echo"</body>";
 echo"</html>";
+
 ?>
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+ window.onload = function() {
+    jQuery.ajax({
+        url: "http://192.168.1.122:8081/?user="+<?php echo $user->id;?>+"&type=job" ,
+        type: "GET",
+        async: false,
+        success: function (data) {
+		var arr = [];
+		for(var x in data){
+			arr.push(data[x]);
+			}
+        			
+
+}
+		
+    });
+ }
+</script>
+ <script type="text/JavaScript">
+      setTimeout("location.href = 'http://nicholash2.sgedu.site/degree.php';",1500);
+ </script>
+</head>
+<body>
+</body>
+</html>

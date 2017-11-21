@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<script>
+function showUser(str) {
+    if (str == "") {
+        document.getElementById("txtDisplay").innerHTML = "";
+        return;
+    } else { 
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+		
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtDisplay").innerHTML = this.responseText;
+            }
+        };
+		
+		//php GET request by userID
+        xmlhttp.open("GET","proxy.php?u="+str,true);
+        xmlhttp.send();
+    }
+}
+</script>
+</head>
+<body>
+<form>
+<select name="users" onchange="showUser(this.value)">
+  <option value="">Select a person:</option>
+  <option value="1">Nick Holyk</option>
+  <option value="2">User 2</option>
+  <option value="3">User 3</option>
+  <option value="4">User 4</option>
+  </select>
+</form>
+<br>
+<div id="txtDisplay"><b>User info will be listed here...</b></div>
+
+
+
+
+</body>
+</html>

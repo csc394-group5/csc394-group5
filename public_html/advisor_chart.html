@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="chart/Chart.bundle.js"></script>
+<script src="chart/utils.js"></script>
+<script>
+var myChart; 
+var ctx; 
+function query() {
+ 
+ var UserID = document.getElementById("input").value;
+ var Job1 = "";
+ var Job2 = "";
+ var Job3 = "";
+ var Job4 = "";
+ var Job5 = "";
+
+ var JobResult1 = 0;
+ var JobResult2 = 0;
+ var JobResult3 = 0;
+ var JobResult4 = 0;
+ var JobResult5 = 0;
+ 
+    jQuery.ajax({
+        url: "/app/api.php?r="+UserID,
+        type: "GET",
+        async: false,
+        success: function (data) {
+		var arr = [];
+		for(var x in data){
+			arr.push(data[x]);
+			}
+        			
+		Job1 = arr[0].Job1;
+		Job2 = arr[0].Job2;
+		Job3 = arr[0].Job3;
+		Job4 = arr[0].Job4;
+		Job5 = arr[0].Job5;
+		
+		// Remove special characters from job names
+		Job1 = Job1.replace(/\_/g, ' '); 
+		Job2 = Job2.replace(/\_/g, ' '); 
+		Job3 = Job3.replace(/\_/g, ' '); 
+		Job4 = Job4.replace(/\_/g, ' '); 
+		Job5 = Job5.replace(/\_/g, ' '); 
+		
+		JobResult1 = arr[0].JobResult1;
+		JobResult2 = arr[0].JobResult2;
+		JobResult3 = arr[0].JobResult3;
+		JobResult4 = arr[0].JobResult4;
+		JobResult5 = arr[0].JobResult5;
+
+		}
+	}); 
+		
+
+
+
+
+	var chartColors = window.chartColors;
+    var color = Chart.helpers.color;
+    var config = {
+        data: {
+            datasets: [{
+                data: [
+                    JobResult1,
+                    JobResult2,
+                    JobResult3,
+                    JobResult4,
+                    JobResult5,
+                ],
+                backgroundColor: [
+                    color(chartColors.red).alpha(0.5).rgbString(),
+                    color(chartColors.orange).alpha(0.5).rgbString(),
+                    color(chartColors.yellow).alpha(0.5).rgbString(),
+                    color(chartColors.green).alpha(0.5).rgbString(),
+                    color(chartColors.blue).alpha(0.5).rgbString(),
+                ],
+                label: 'My dataset' // for legend
+            }],
+            labels: [
+                Job1,
+                Job2,
+                Job3,
+                Job4,
+                Job5
+            ]
+        },
+        options: {
+            responsive: true,
+            legend: {
+                position: 'right',
+            },
+            title: {
+                display: true,
+                text: 'Custom Career Match'
+            },
+            scale: {
+              ticks: {
+                beginAtZero: true
+              },
+              reverse: false
+            },
+            animation: {
+                animateRotate: false,
+                animateScale: true
+            }
+        }
+    };
+	
+	ctx = document.getElementById("chart-area");
+	
+	window.myPolarArea = new Chart(ctx).PolarArea(config); 
+}; 
+
+	var colorNames = Object.keys(window.chartColors);
+
+
+</script>
+</head>
+<body>
+<input type="text" id="input" placeholder="Enter UserID..." value="">
+<button onclick="query()">Search</button>
+<div id= "test"></div>
+    <div id="canvas-holder" style="width:100%">
+    <canvas id="chart-area"></canvas>
+    </div>
+</body>
+</html>

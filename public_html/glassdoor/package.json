@@ -1,0 +1,26 @@
+{
+  "name": "SalariesCharting",
+  "version": "1.0.0",
+  "private": false,
+  "license": "free",
+  "description": "Example react charts app",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/austy81/SalariesCharting.git"
+  },
+  "keywords": [
+    "react",
+    "salaries",
+    "charts"
+  ],
+  "author": "austy81",
+  "engines": {
+    "node": "0.12.x"
+  }
+}
