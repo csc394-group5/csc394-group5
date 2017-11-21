@@ -1,3 +1,154 @@
+commit f63620f3a54692c87e3ffdeea94b0c99361bbab5
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:57:17 2017 -0600
+
+    changed public_html readme formatting
+
+commit 59fb270fe68c303e3308e999cb41d701921cfc65
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:56:22 2017 -0600
+
+    changed public_html readme to Markdown adn added formatting
+
+commit 809d1893489a713a21fac1f40b7e4dac24acacde
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:49:56 2017 -0600
+
+    updated NN readme
+
+commit 0865d22f20f9ddd416894abd20463ce1667f271d
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:49:35 2017 -0600
+
+    updated NN readme
+
+commit 5aab6e6a7b09257a983b78fe7a7ef93cad9383dc
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:49:04 2017 -0600
+
+    updated NN readme
+
+commit 0d3d5e108ce59f57ae3d7e45e960d4e29f634e2c
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:47:51 2017 -0600
+
+    changed NN readme to Markdown format and added formatting
+
+commit 14f126bbf8119a73fad111fba8ae1e2852b661fd
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:43:03 2017 -0600
+
+    updated database readme formatting
+
+commit 61d8184ec88b3b55b626ff648dd3273b73d570ca
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:41:33 2017 -0600
+
+    changed Database readme to markdown format and added formatting
+
+commit 791009fd8077b77f466dd043780b91f7597d1241
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:36:30 2017 -0600
+
+    added readme to /Documentation/
+
+commit 9b55cc1c07920393028f5c181a4eec501a37fbc1
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:33:00 2017 -0600
+
+    renamed System Architecture doc
+
+commit 781ada2a60deaa43d8935eb6e8a5c173e9dda917
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:31:16 2017 -0600
+
+    renamed the Requirements doc
+
+commit 75f04e1585e48ab6751b9432270918874688e304
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:30:16 2017 -0600
+
+    renamed the Requirements doc
+
+commit ebec38bb8893eca3d4d0ffeda977506336649303
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:29:30 2017 -0600
+
+    removed Python readme from /Documentation/
+
+commit d39bda6dec63a4f5b4e4ac8c4d9b1b1d580a28b7
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:23:00 2017 -0600
+
+    updated Python Server readme
+
+commit d68dbb2e98091fbd67ad81622b095294bf80fe8e
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:22:40 2017 -0600
+
+    updated Python Server readme
+
+commit 197696c85a51a66f6a5fccb0fda81ac96b709d32
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:22:02 2017 -0600
+
+    updated Python Server readme
+
+commit aebb4bcd50c2187482d9d2e5a6568f5c0ec26c6d
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:21:26 2017 -0600
+
+    updated Python Server readme
+
+commit c5d69737d8614370267595d22a39a70f31530455
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:20:29 2017 -0600
+
+    changed Python Server readme to Markdown format and included formatting changes to display better on GitHub
+
+commit ca1ae8a485d4f6cc528ae1e407f7f3b577406283
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 13:19:40 2017 -0600
+
+    changed Python Server readme to Markdown format and included formatting changes to display better on GitHub
+
+commit feedfc8b98b9b133d3f1fdcb83961ffa74e3b0f8
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Tue Nov 21 13:00:34 2017 -0600
+
+    Renamed python server doc file
+
+commit efe1d222ae11ab36961ba428c004ab7836f16b5f
+Merge: 8f96674 5e9b36c
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Tue Nov 21 12:59:49 2017 -0600
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 8f96674d0dc0c3a8b5cb65914b429f70ad8adff1
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Tue Nov 21 12:59:27 2017 -0600
+
+    Added python server documentation
+
+commit 5e9b36c10c6e3d8f905693c07ad248ddc8df59cd
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:29:06 2017 -0600
+
+    updated readme
+
+commit 7d40bb8965b0fc18366c4d1967cf2ed40523b1ea
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:27:17 2017 -0600
+
+    added commit log to Documentation
+
+commit c87d1612a67c02c17fcb48f87c981062d4bef4f3
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:26:46 2017 -0600
+
+    updated readme
+
 commit 62b1eebddb422e708bb8976ed17fe7f085760e58
 Author: Glenn Hintze <glenn@glennhintze.com>
 Date:   Tue Nov 21 12:24:14 2017 -0600
