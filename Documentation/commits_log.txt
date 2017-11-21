@@ -1,0 +1,262 @@
+commit 62b1eebddb422e708bb8976ed17fe7f085760e58
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:24:14 2017 -0600
+
+    Added Defect Tracker, removed Issues Log
+
+commit 332bdec005c03a8bb04846792fbedbd9f615c078
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:23:31 2017 -0600
+
+    Updated readme
+
+commit 713d704aafdb868b97bd1c8f9e660bd5a897144e
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:19:41 2017 -0600
+
+    Updated readme
+
+commit c9d397487f9c781071fa7cd01787f1df0c531dd4
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:18:36 2017 -0600
+
+    Added JobFox User Guide
+
+commit 8778fc0509d434ffd314f015002dbb76159368d7
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:07:20 2017 -0600
+
+    updated readme
+
+commit 9e124c6bceacfed51505cbe022954937ad174e8b
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:05:18 2017 -0600
+
+    renamed Project_Documentation to README and reformatted as Markdown for proper display on GitHub page
+
+commit 96acd2199f3ab8ba33e81e462695dafedc3bfb8d
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Nov 21 12:04:47 2017 -0600
+
+    renamed Project_Documentation to README and reformatted as Markdown for proper display on GitHub page
+
+commit 835efe44f04b6a8067a7ffa6502ff008316d7b7f
+Author: Nicholas Holyk <nickholyk@gmail.com>
+Date:   Tue Nov 21 11:30:30 2017 -0600
+
+    Project Final Draft
+    
+    Organized file folders, Added Neural Network NodeJS Server, added
+    Webserver frontend source files, added database files, added readme.txt
+    to directories, compiled project_documentation.txt
+
+commit d73523940a05de854cfa38c27b71cb3830d692fd
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Mon Nov 20 21:47:50 2017 -0600
+
+    Revert: Added job files, degrees file, job scraping scripts, and python server code.
+
+commit ac5be7f0652215ffc27800ce450cade1251eee38
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Mon Nov 20 21:44:04 2017 -0600
+
+    Added job files, degrees file, job scraping scripts, and python server code.
+
+commit c8f009c75fcf139073f392b8bad29b9e7ab28d7a
+Author: rmacwan2 <rmacwan2@users.noreply.github.com>
+Date:   Mon Nov 20 00:25:55 2017 -0600
+
+    Update Demo User List.txt
+
+commit 055d491940af6fb2a6e9f76e1f8d467ddc41731e
+Author: rmacwan2 <macwanr278@dupage.edu>
+Date:   Sun Nov 19 16:19:14 2017 -0600
+
+    Added job files, degrees file, job scraping scripts, and python server code.
+
+commit b35d14f33ea4dcd8e7f7325e95af916dd91bd3c7
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Nov 17 16:12:08 2017 -0600
+
+    Adding some documentation files
+
+commit 2df39af3a89bfa03decf7ef1213a45148c23a9e2
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Thu Nov 16 13:56:23 2017 -0600
+
+    added files from server and changed dir heirarchy oto find files more easily
+
+commit 5c78f65c9d53b415778d9d072f46d9797352614c
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Nov 10 11:05:46 2017 -0600
+
+    removed undefined var bug
+
+commit 29cf896386af2a1d64493b675f7fce584bf9cf04
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Thu Nov 9 17:33:01 2017 -0600
+
+    moved docs from working folder to tracked folder
+
+commit f8817da4d025fa93514abd8948a15724d16720bb
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Thu Nov 9 17:30:37 2017 -0600
+
+    added docs dir
+
+commit b271cf96b1e8c9204d1867b61f422486c7611fbe
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Thu Nov 9 17:25:17 2017 -0600
+
+    added advisors php
+
+commit 878f984497707babf4ed949eae5a5fa16b20cd79
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Wed Nov 8 12:51:00 2017 -0600
+
+    added data processing scripts
+
+commit 8d822078f551b683ec26100082cd65a05b3bd54e
+Merge: 3712c16 c94153c
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Wed Oct 25 12:33:25 2017 -0500
+
+    Merge branch 'master' of https://github.com/glennhintze/csc394-group5
+
+commit 3712c168986246d231ba4b5f4d4ff7d0217f9176
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Wed Oct 25 12:33:05 2017 -0500
+
+    added data dir and data files
+
+commit c94153c3ad2c16d3b89c30dcd527754c3733781b
+Author: nickholyk <nickholyk@gmail.com>
+Date:   Sat Oct 21 06:43:36 2017 -0500
+
+    Add files via upload
+    
+    php api..  dynamically generates json file to pass data for javascript functions to decode.
+
+commit 4f567dc043b784d347dc2297e9b8a98867aa7995
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Wed Oct 18 13:08:03 2017 -0500
+
+    created js algorithm for hard coded datasets.
+
+commit 800c0e01c36a6e1f4458f2d836023a1dbdca437e
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Oct 17 19:47:29 2017 -0500
+
+    created php algorithm for hard coded datasets.
+
+commit 4fa62968e34ac1e45aa609bc683179e55737c392
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 16:21:29 2017 -0500
+
+    created sql script to create Classes table
+
+commit 3cc1dda5f228ffb9d2cb83ac2b8eb8b39a06ea84
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 16:08:40 2017 -0500
+
+    created sql script to create and populate Degrees table
+
+commit 59326ba83451c91b5d338c8b5fbdd6d558eaca19
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 16:08:00 2017 -0500
+
+    created sql script to create Students table
+
+commit 8e0d0ee16b3169bc731ae1bc0e3a70116a228da5
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 14:12:38 2017 -0500
+
+    created sql script for students table creation
+
+commit 2ac759036f3f567b385d806089223b49bba147e0
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 13:50:44 2017 -0500
+
+    created sql script for data load
+
+commit 34787ab3fc3e4536541415fe784a6d02d83a22b9
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Fri Oct 13 13:49:51 2017 -0500
+
+    created sql script for data load
+
+commit 586b771698262a3879ef93c0e4ddd5c79e7b060c
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Oct 10 18:04:20 2017 -0500
+
+    actually fixed once per line bug
+
+commit 33469167e8971b6f5fcf0c210524cdc95f397b2d
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Tue Oct 10 12:26:04 2017 -0500
+
+    fixed bug where term was counted only once per line
+
+commit fb383a6dd1880396d44ada88b58e04de58fa2051
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Mon Oct 9 16:50:13 2017 -0500
+
+    filename changed to reflect purpose. added bulk processing.
+
+commit e8e7ba3592b83bd625ef88e8e78939247209d101
+Merge: d83f278 f149c1c
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Mon Oct 9 15:23:15 2017 -0500
+
+    Merge branch 'master' of https://github.com/glennhintze/csc394-group5
+
+commit d83f278c9c784c5dd910f3fa114c54506f5d60c9
+Author: Glenn Hintze <glenn@glennhintze.com>
+Date:   Mon Oct 9 15:22:51 2017 -0500
+
+    First working version
+
+commit f149c1c96236f877a9a3333f3b7a6632928a6f33
+Merge: fcb2c8b e12a75e
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Tue Sep 19 19:29:44 2017 -0500
+
+    Merge pull request #1 from JLeiva23/patch-1
+    
+    Create Jonathan.txt
+
+commit e12a75e8111160c9abced4d0f523468e9145eb59
+Author: JLeiva23 <JonathanLeiva23@gmail.com>
+Date:   Tue Sep 19 19:26:12 2017 -0500
+
+    Create Jonathan.txt
+
+commit fcb2c8b9a98fc9d972bd7bfdc62442db2e50496d
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Tue Sep 19 19:24:56 2017 -0500
+
+    adding text to glenn.txt
+
+commit f42b1d41a52404a9d229d6e6ca366245c411eac1
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Tue Sep 19 17:44:04 2017 -0500
+
+    updating readme format
+
+commit 1c62de680a8f4397aa4c855e5509c728cc0e8e98
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Thu Sep 14 13:36:14 2017 -0500
+
+    updating README
+
+commit 137ab68c390224fc4cfc89eb5420934bcd126f1a
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Thu Sep 14 12:20:39 2017 -0500
+
+    sending setup acknowledgement
+
+commit fd46ced3ecd6fe3eb175c125bc574a22b3e04631
+Author: glennhintze <glenn@glennhintze.com>
+Date:   Wed Sep 13 11:45:42 2017 -0500
+
+    Initial commit
