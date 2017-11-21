@@ -41,7 +41,7 @@ Zain Qurashi
 ## Documentation
 Below are the locations of the following required documents:
 
--Requirements (functional and Non-functional):
+* Requirements (functional and Non-functional):
 [\Documentation\REQ-229377-031017-1714.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/REQ-229377-031017-1714.pdf)
 
 -System Technical Specs:
