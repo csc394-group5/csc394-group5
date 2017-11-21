@@ -72,4 +72,4 @@ Below are the locations of the following required documents:
 
 * Additional Documentation
 
-[Outstanding Issues Log] ()
+[Defect Tracker](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/Defect%20Tracker.xlsx)
