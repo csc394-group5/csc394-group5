@@ -19,6 +19,7 @@ Zain Qurashi
 **Administration URL:** https://nicholash2.sgedu.site/administrator/
 
 **NodeJS NN_Server Request:** http://localhost:8081/?user=541&type=job
+
 **NodeJS NN_Server Request:** (http://localhost:8081/?user=541&type=job)
 
 **Python_Server job listing Request:** https://rmacwan.pythonanywhere.com/api/jobs/JobTitle
@@ -34,9 +35,6 @@ Zain Qurashi
 **Advisor Username:** Advisor
 
 **Advisor Password:** Advisor1!
-
-
-
 
 ## Documentation
 Below are the locations of the following required documents:
@@ -58,7 +56,7 @@ Below are the locations of the following required documents:
 
 [\Documentation\(JOBFOX) System Architecture.pdf](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/%5BJOBFOX%5D%20System%20Architecture.pdf)
 
-* User <anuals –  short, intuitive, describe features/functions for all users:
+* User Manuals –  short, intuitive, describe features/functions for all users:
 
 [JobFox](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/JobFox%20User%20Guide.pdf)
 
@@ -73,3 +71,5 @@ Below are the locations of the following required documents:
 * Additional Documentation
 
 [Defect Tracker](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/Defect%20Tracker.xlsx)
+
+[GitHub Commit Log](https://github.com/csc394-group5/csc394-group5/blob/master/Documentation/commits_log.txt)
