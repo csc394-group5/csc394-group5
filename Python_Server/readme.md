@@ -24,10 +24,10 @@ job postings as needed.
 
 
 Degree requests are in the form /api/degrees/<degree>. Variable degree has hyphens or underscores between words. Request returns a json which includes descriptions and urls for up to any of the following:
-    * Degree Description
-    * About the Program
-    * Curriculum and Requirements
-    * Concentrations
+* Degree Description
+* About the Program
+* Curriculum and Requirements
+* Concentrations
 
 [Degree Request Example](rmacwan.pythonanywhere.com/api/degrees/Computer-Science)
 
