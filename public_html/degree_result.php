@@ -55,21 +55,29 @@ $user = JFactory::getUser();
 	   <fieldset class="field_set">
 		<h2 id="Degree2Title"></h2>
 		<div id="Degree2Desc"></div>
+		<div id="Degree2About"></div>
+		<div id="Degree2Curriculum"></div>
 	</fieldset>
 	<br>
 	   <fieldset class="field_set">
 		<h2 id="Degree3Title"></h2>
 		<div id="Degree3Desc"></div>
+		<div id="Degree3About"></div>
+		<div id="Degree3Curriculum"></div>
 	</fieldset>
 	<br>
 	   <fieldset class="field_set">
 		<h2 id="Degree4Title"></h2>
 		<div id="Degree4Desc"></div>
+		<div id="Degree4About"></div>
+		<div id="Degree4Curriculum"></div>
 	</fieldset>
 	<br>
 	   <fieldset class="field_set">
 		<h2 id="Degree5Title"></h2>
 		<div id="Degree5Desc"></div>
+		<div id="Degree5About"></div>
+		<div id="Degree5Curriculum"></div>
 	</fieldset>
 </div>		
 </body>
@@ -134,16 +142,80 @@ $user = JFactory::getUser();
 		headers: { 'Access-Control-Allow-Origin': '*' },
 		xhrFields: { withCredentials: false }, 
 		success: function (data) {
-			Degree1Description = data["Description"]; 
-			document.getElementById("Degree1Desc").innerHTML = "<i>" + Degree1Description + "</i>"; 
+			document.getElementById("Degree1Desc").innerHTML = data["Description"]; 
 			document.getElementById("Degree1Title").innerHTML = "1) " + Degree1; 
+			// document.getElementById("Degree1Title").innerHTML += "<a href=\'" +data["About the Program"] + "\' target='_blank' style='text-decoration:none'></a>";  
+		}, 
+		failure: function() {
+			alert("Something bad happened."); 
+			}
+	}); 
+	// Get degree info from python api
+	jQuery.ajax({
+		url: "https://rmacwan.pythonanywhere.com/api/degrees/" +Degree1,
+		type: "GET",
+		datatype: 'json',
+		headers: { 'Access-Control-Allow-Origin': '*' },
+		xhrFields: { withCredentials: false }, 
+		success: function (data) {
+			Degree1Description = data["Description"]; 
+			document.getElementById("Degree2Desc").innerHTML =  data["Description"];
+			document.getElementById("Degree2Title").innerHTML = "2) " + Degree2; 
+		}, 
+		failure: function() {
+			alert("Something bad happened."); 
+			}
+	}); 
+	// Get degree info from python api
+	jQuery.ajax({
+		url: "https://rmacwan.pythonanywhere.com/api/degrees/" +Degree1,
+		type: "GET",
+		datatype: 'json',
+		headers: { 'Access-Control-Allow-Origin': '*' },
+		xhrFields: { withCredentials: false }, 
+		success: function (data) {
+			Degree1Description = data["Description"]; 
+			document.getElementById("Degree3Desc").innerHTML = data["Description"];
+			document.getElementById("Degree3Title").innerHTML = "3) " + Degree3; 
+		}, 
+		failure: function() {
+			alert("Something bad happened."); 
+			}
+	}); 
+	// Get degree info from python api
+	jQuery.ajax({
+		url: "https://rmacwan.pythonanywhere.com/api/degrees/" +Degree1,
+		type: "GET",
+		datatype: 'json',
+		headers: { 'Access-Control-Allow-Origin': '*' },
+		xhrFields: { withCredentials: false }, 
+		success: function (data) {
+			Degree1Description = data["Description"]; 
+			document.getElementById("Degree4Desc").innerHTML = data["Description"];
+			document.getElementById("Degree4Title").innerHTML = "4) " + Degree4; 
+		}, 
+		failure: function() {
+			alert("Something bad happened."); 
+			}
+	}); 
+	// Get degree info from python api
+	jQuery.ajax({
+		url: "https://rmacwan.pythonanywhere.com/api/degrees/" +Degree1,
+		type: "GET",
+		datatype: 'json',
+		headers: { 'Access-Control-Allow-Origin': '*' },
+		xhrFields: { withCredentials: false }, 
+		success: function (data) {
+			Degree1Description = data["Description"]; 
+			document.getElementById("Degree5Desc").innerHTML = data["Description"]; 
+			document.getElementById("Degree5Title").innerHTML = "5) " + Degree5; 
 		}, 
 		failure: function() {
 			alert("Something bad happened."); 
 			}
 	}); 
 
-var chartColors = window.chartColors;
+	var chartColors = window.chartColors;
     var color = Chart.helpers.color;
     var config = {
         data: {
